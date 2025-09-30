@@ -6,6 +6,7 @@
         <title>Katrina Watson</title>
         <!-- Link to CSS -->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
 
         <!-- Link to Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,36 +15,61 @@
 
     </head> 
     <body>
-    <!-- Top navigation bar -->
-        <nav class="navbar">
-            <h1 class="logo">
-                <img src="assets/KW.png" alt="logo">
-            </h1>
-            <div class="nav-tabs">
-            <a href="#about" class="tab">About</a>
-            <a href="#projects" class="tab">Projects</a>
-            <a href="#contact" class="tab">Contact</a>
-            </div>
-        </nav>
+        <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+        <img src="assets/KW.png" alt="logo">
+        </div>
+        <ul class="nav-tabs">
+        <li><a href="#about" class="tab">About Me</a></li>
+        <li><a href="#projects" class="tab">Projects</a></li>
+        <li><a href="#contact" class="tab">Contact</a></li>
+        </ul>
+    </nav>
+
     <!-- Folder container -->
     <div class="folder-container">
-
-    <!-- Back folder -->
-    <div class="folder-back"></div>
-
     <!-- Front folder -->
     <div class="folder-front">
         <div class="content">
         <section id="about">
-            <h1>About</h1>
-            <p>Learn about me here.</p>
-        </section>
+            <h1>About Me</h1>
+            <h3><i>Learn about me here.</i></h3>
+            <aside>
+            <div class="portfolio-img">
+                <img src="assets/Katrina-img.png" alt="Portfolio Picture"> 
+            </div>
+            </aside>
 
+            <article>
+                <div class="title">
+                    <h1>Hello</h1>
+                </div>
+                <h2><i><b>I'm Katrina</b></i></h2>
+            </article>
+        </section>
         <section id="projects">
             <h1>Projects</h1>
-            <p>Here are some of my projects.</p>
-        </section>
+            <h2>Here are some of my projects.</h2>
 
+            <ul class="card-list">
+                    <li class="card">
+                        <img src="assets/cherry-fol.png" alt="project" class="card-img">
+                        <h3 class="card-title">Aromatic Café</h3> 
+                        <p class="card-text">Dreamy Website with gorgeous color pallete.</p>
+                    </li>
+                    <li class="card">
+                        <img src="assets/print-fol.png" alt="project2" class="card-img">
+                        <h3 class="card-title">Weather App</h3>
+                        <p class="card-text">Simple weather tracking app.</p>
+                    </li>
+                    <li class="card">
+                        <img src="assets/f3.png" alt="project3" class="card-img">
+                        <h3 class= "card-title">Eatr</h3>
+                        <p class="card-text">Meal Planning App</p>
+                    </li>
+                </ul>
+        </section>
         <section id="contact">
             <h1>Contact</h1>
             <p>Email me at <a href="mailto:katrina.watsonma@gmail.com">katrina.watsonma@gmail.com</a></p>
@@ -55,8 +81,6 @@
         </footer>
     </div>
     </div>
-
-   
 
     </body>
     </html>
