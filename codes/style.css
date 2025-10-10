@@ -17,28 +17,26 @@
   --card-shadow-hover: 0 6px 16px rgba(0,0,0,0.15);
   --card-transition: 0.5s;
 }
-.title h1 {
-  color: var(--color-back);
-  font-family: "Ultra", serif;
-  font-weight: 400;
-  font-size: 50px;
-  margin: 20px 0;
+
+.title h3 {
+  color: var(--color-accent);
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  margin: 10px 0 40px 0;
+  text-align: center justify;
+  letter-spacing: 1px;
+  line-height: 1.4; 
 }
-aside {
+aside /* about me image */ {
   gap: 10px;
   width: 30%;
   padding-left: 15px ;
   margin-left: 15px ;
   float: left;
+  display: flex;
+}
 
-}
-img .portfolio-img {
-  
-  width: 500px;
-  height: 500px;
- 
-  object-fit: cover;
-}
 .portfolio-img {
   width: 500px;
   height: 500px;
@@ -46,8 +44,8 @@ img .portfolio-img {
   overflow: hidden;     /* hides corners outside the circle */
   border: 4px solid #cfe618; 
   border-radius: 50%;
-  display: flex;
   margin: 40px auto 0;
+  display: inline-block;
 }
 
 .portfolio-img img {
@@ -56,11 +54,10 @@ img .portfolio-img {
   object-fit: cover;    /* scales image properly */
   display: block;
   object-position: center top;
-  display: block;
 }
 
 
-body,h1,p,ul,li, html {
+body,h1,p,ul,li, html,article {
   margin: var(--margin);
   padding: var(--padding); 
   scroll-behavior: smooth;
@@ -70,7 +67,7 @@ body,h1,p,ul,li, html {
 .logo {
   display: flex;
   align-items: center; /* keeps image + text aligned vertically */
-  margin: 0; /* reset default h1 margins */
+  margin: var(--margin); /* reset default h1 margins */
 }
 .logo img {
   height: 80px;
@@ -136,9 +133,23 @@ body {
   padding: 8px 16px;
   border-radius: 8px;
   background: var(--color-tab-primary);
-  color: var(--color-fe4d7b, #fe4d7b);
+  color: var(--color-tab-active);
   font-weight: bold;
   transition: all 0.3s ease;
+}
+.nav-tabs .resume {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: var(--color-tab-primary);
+  color: var(--color-tab-active);
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.nav-tabs .resume:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 
 .nav-tabs .tab:hover,
@@ -193,7 +204,7 @@ body {
   background: var(--color-tab-primary);
   color: var(--color-fe4d7b);
   font-weight: bold;
-  transition: transform 0.3s, background 0.3s;
+  transition: transform 0.3s;
 }
 
 .tab:hover {
