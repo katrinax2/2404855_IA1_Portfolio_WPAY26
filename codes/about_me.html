@@ -1,14 +1,183 @@
 <!DOCTYPE html>
-<html>
-    <a href="index.html">
-        <button>Back to Home</button>
-    </a>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
         <title>About Me</title>
     </head>
+    <style>
+    .page-grid {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        font-family: 'Inter', sans-serif;
+        font-size: large;
+        /*background-color: var(--color-base);*/
+    }
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: start;
+    }
+    .hobbies, .Vision, .mission, .quote, .review, .chapter {
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 0;
+    }
+    .quote {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 1.2em;
+        color: var(--color-tab-active);
+        background-color: var(--color-tab-primary);
+        font-style: italic;
+        margin-top: 10px;
+    }
+    .hobbies, .Vision, .mission, .review, .chapter {
+        display: grid;
+        grid-gap: 10px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        row-gap: 3em;
+        background-color: var(--color-tab-secondary);
+    }
+
+    .hobbies h1, .Vision h1, .mission h1, .chapter h1 , .review h1 {
+        font-family: 'Ultra', serif;
+        color: var(--color-back);
+    }
+    .hobbies {
+        color: #fff;
+    }
+    .hobbies ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+    .hobbies p {
+        margin-top: 10px;
+    }
+
+ 
+    .Vision {
+        display: grid;
+        align-items: center;
+        grid-gap: 20px;
+        text-align: center;
+    }
+    .Vision .img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .Vision h2 {
+        font-style: italic;
+        color: var(--color-accent);
+    }
+    .mission h3 {
+        font-style: italic;
+        color: #fff;
+    }    
+    .article {
+        text-wrap: balance;
+        text-align: justify;
+        line-height: 1.6;
+    }   
+    .chapter h3 {
+        text-wrap: balance;
+        text-align: justify;
+        line-height: 1.6;
+        color: #fff
+    }
+    .review h3 {
+        text-wrap: balance;
+        text-align: justify;
+        line-height: 1.6;
+        color: #fff;
+    }   
+    
+    </style>
+
     <body>
-        
+        <main class="page-grid">
+            <!-- Navigation -->
+            <nav class="navbar">
+                <a href="index.html" class="button">Home</a>
+                <div class="logo">
+                    <img src="assets/KW.png" alt="logo">
+                </div>
+                <ul class="nav-tabs">
+                    <li><a href="#about" class="tab">About Me</a></li>
+                    <li><a href="#projects" class="tab">Projects</a></li>
+                    <li><a href="#contact" class="tab">Contact</a></li>
+                    <li>
+                        <a href="assets/Katrina_RESUME.pdf" target="_blank" class="resume">Resume</a>
+                    </li> 
+                </ul>
+            </nav>
+            <div class="main-content">
+                <div class="hobbies">
+                    <h1>More About Me</h1>
+                    <p>When I'm not coding, I enjoy a variety of hobbies that keep me inspired and balanced:</p>
+                    <ul>
+                        <li>Hiking</li>
+                        <li>Photography</li>
+                        <li>Exploring new cuisines</li>
+                    </ul> 
+                    <p>I believe that a well-rounded life enhances creativity and problem-solving skills in development.</p>
+                </div>
+                <div>
+                    <div class="Vision">
+                        <h1>My Vision Statement</h1>
+                        <h2>Its not hard its just new</h2>
+                    </div>
+                    <div class="mission">
+                        <h1>Mission Statement</h1>
+                        <h3>I am going to SUCCEED because I'm f<sup>*</sup>cking crazy!</h3>
+                    </div>
+                </div>
+                <div class="quote">
+                    <h1>"Oh yes, the past can hurt. But the way I see it, you can either run from it, or learn from it"<br> -Rafiki, The Lion King</h1>
+                </div>
+                <div class="review">
+                    <article>
+                        <h1>My Favourite Idea from AI Business of 2025</h1>
+                        <h3>The idea I really like is using AI apps to make healthcare more proactive instead of just waiting for people to get sick. 
+                            These apps can track things like heart rate, sleep, workouts, eating habits, and medical history to spot potential problems early.
+                            In my life, I could use one with a smartwatch or fitness tracker to keep an eye on my health and catch issues before they get serious.
+                            This is super useful because it can help people stay healthier, save money on medical bills, and even prevent serious illnesses.
+                            For example, if the app notices something unusual in your heart rate or blood pressure, it could alert you to see a doctor sooner rather than later.
+                            Of course, there are ethical concerns. Health data is really private, and the app could make mistakes or give false alarms, which can stress people out.
+                            My solution would be to make sure all data is protected, let users control what they share, and always combine AI alerts with advice from real doctors instead of relying on the app alone.
+                            <b>A real example is AliveCor KardiaMobile, which can monitor your heart and detect irregular rhythms using AI. You can check it out here: <a href="https://alivecor.com/">Alive Cor</a> </b>
+                            Overall, I think these apps are an exciting way to stay on top of your health, as long as privacy and accuracy are handled carefully.
+                        </h3>
+                    </article>
+                </div>
+                <div class="chapter">
+                    <h1>Chapter 4</h1>
+                    <h3>This chapter showed me how something as simple as smiling can make both me and others feel better. It also reminded me to write down
+                        my goals and treat my relationships with care, like tending a garden. I liked the idea of working backward from long-term goals to figure 
+                        out the smaller steps I need to take now.</h3>
+                    <h1>Chapter 5</h1>
+                    <h3>I learned that it's important to take charge of my day instead of letting it control me. 
+                        Doing the important stuff first and not getting caught up in the urgent things really helps me stay calm and focused.
+                    </h3>
+                    <h1>Chapter 6</h1>
+                    <h3>This chapter made me think about the people I spend time with and how they affect me.
+                        It's a good reminder to be around people who help me grow and push me in a positive direction.</h3>
+                    <h1>Chapter 7</h1>
+                    <h3>I liked how this chapter talked about being a lifelong learner. 
+                        Reading, watching successful people, and learning from my own mistakes are all simple ways to keep improving myself every day.
+                    </h3>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>

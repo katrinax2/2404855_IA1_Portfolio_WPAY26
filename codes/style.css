@@ -22,11 +22,23 @@
   color: var(--color-accent);
   font-family: "Inter", Arial, sans-serif;
   font-weight: 100;
-  font-size: 20px;
-  margin: 10px 0 40px 0;
+  font-size: 30px;
+  margin: 10px 0;
   text-align: center justify;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  word-spacing: 1.5px;
   line-height: 1.4; 
+}
+
+.title h1 {
+  color: var(--color-accent);
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 70px;
+  margin: 10px 0 40px 0;
+  text-align: center;
+  letter-spacing: 1px;
+
 }
 aside /* about me image */ {
   gap: 10px;
@@ -304,3 +316,130 @@ body {
   border: 2px solid var(--color-accent);
   font-size: 0.9rem;
 }
+
+
+/*.page-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* ABOUT ME PAGE */
+/*.hobbies {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  grid-gap: 2em;
+  grid-auto-rows: minmax(100px, auto);
+  max-width: 350px;
+  background: var(--color-tab-secondary);
+  border: 2px solid var(--color-back);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  aspect-ratio: 3 / 4;
+ }
+  
+  .hobbies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+  .hobbies ul li {
+    background: var(--color-tab-primary);
+    padding: 10px;
+    border-radius: 8px;
+    text-align:left; 
+    list-style: none;
+  }
+  .hobbies h1 {
+    grid-column: span 2;
+    text-align: center;
+    color: var(--color-accent);
+  }
+  .hobbies p {
+    grid-column: span 2;
+    text-align: center;
+    font-family: "Inter", Arial, sans-serif;  
+    color: var(--color-base);
+    font-size: 1rem;
+    line-height: 1.4; 
+    margin-top: 0; 
+  }*/
+.button {
+  background: var(--color-tab-primary);
+  color: var(--color-tab-active);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.button:hover {
+  background: var(--color-tab-secondary);
+  color: #fff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+.button:active {
+  transform: scale(0.95);
+}
+/*
+.vision, .mission {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid var(--color-accent);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.vision {
+  background: var(--color-tab-active);
+  color: var(--color-accent);
+}
+.vision h1 {
+  color: var(--color-accent);
+  margin-top: 0;
+}
+.img .vision {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px; 
+}
+
+.mission {
+  background: var(--color-tab-secondary);
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid var(--color-accent);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.mission h1 {
+  color: var(--color-accent);
+  margin-top: 0;
+}
+.mission h3 {
+  font-size: 1.2rem;
+  animation: typing 4s steps(40) infinite  alternate; ;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}*/
