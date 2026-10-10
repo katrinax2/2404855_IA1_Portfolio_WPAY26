@@ -1,183 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,ops>z,wght@0,14..32,100..900;1,14..32,100..900&family=Ultra&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style.css">
-        <title>About Me</title>
-    </head>
-    <!--  
-    .main-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        align-items: start;
-    }
-    .hobbies, .Vision, .mission, .quote, .review, .chapter {
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: 0;
-    }
-    .quote {
-        grid-column: 1 / -1;
-        text-align: center;
-        font-size: 1.2em;
-        color: var(--color-tab-active);
-        background-color: var(--color-tab-primary);
-        font-style: italic;
-        margin-top: 10px;
-    }
-    .hobbies, .Vision, .mission, .review, .chapter {
-        display: grid;
-        grid-gap: 10px;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        row-gap: 3em;
-        background-color: var(--color-tab-secondary);
-    }
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me | Katrina Watson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="index.html" aria-label="Katrina Watson home">
+            <img src="assets/KW.png" alt="Katrina Watson logo">
+        </a>
+        <nav aria-label="Main navigation">
+            <ul class="nav-tabs">
+                <li><a href="index.html" class="tab" aria-current="page">About Me</a></li>
+                <li><a href="projects.html" class="tab">Projects</a></li>
+                <li><a href="contact.html" class="tab">Contact</a></li>
+                <li><a href="assets/Katrina_RESUME.pdf" target="_blank" class="resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    .hobbies h1, .Vision h1, .mission h1, .chapter h1 , .review h1 {
-        font-family: 'Ultra', serif;
-        color: var(--color-back);
-    }
-    .hobbies {
-        color: #fff;
-    }
-    .hobbies ul {
-        list-style-type: disc;
-        margin-left: 20px;
-    }
-    .hobbies p {
-        margin-top: 10px;
-    }
-
- 
-    .Vision {
-        display: grid;
-        align-items: center;
-        grid-gap: 20px;
-        text-align: center;
-    }
-    .Vision .img {
-        width: 30px;
-        height: 30px;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-    .Vision h2 {
-        font-style: italic;
-        color: var(--color-accent);
-    }
-    .mission h3 {
-        font-style: italic;
-        color: #fff;
-    }    
-    .article {
-        text-wrap: balance;
-        text-align: justify;
-        line-height: 1.6;
-    }   
-    .chapter h3 {
-        text-wrap: balance;
-        text-align: justify;
-        line-height: 1.6;
-        color: #fff
-    }
-    .review h3 {
-        text-wrap: balance;
-        text-align: justify;
-        line-height: 1.6;
-        color: #fff;
-    }   
-    
-    </style> -->
-
-    <body>
-        <main>
-            <!-- Navigation -->
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="assets/KW.png" alt="logo">
-                </div>
-                <ul class="nav-tabs">
-                    <li><a href="index.html" class="tab">About Me</a></li>
-                    <li><a href="index.html" class="tab">Projects</a></li>
-                    <li><a href="index.html" class="tab">Contact</a></li>
-                    <li>
-                        <a href="assets/Katrina_RESUME.pdf" target="_blank" class="resume">Resume</a>
-                    </li> 
+    <main class="container">
+        <div class="content">
+            <section class="hobbies">
+                <h1 id="personality-heading">Personality</h1>
+                <p>When I'm not coding, I enjoy a variety of hobbies that keep me inspired and balanced:</p>
+                <ul>
+                    <li>Hiking</li>
+                    <li>Photography</li>
+                    <li>Exploring new cuisines</li>
                 </ul>
-            </nav>
-            <div class="content">
-                <div class="hobbies">
-                    <h1>Personality</h1>
-                    <p>When I'm not coding, I enjoy a variety of hobbies that keep me inspired and balanced:</p>
-                    <ul>
-                        <li>Hiking</li>
-                        <li>Photography</li>
-                        <li>Exploring new cuisines</li>
-                    </ul> 
-                    <p>I believe that a well-rounded life enhances creativity and problem-solving skills in development.</p>
-                </div>
-                <div>
-                    <div class="quote">
-                        <figure class="quote-card">
-                            <blockquote>
-                                "Just because you have rights today does not mean that you will have them tomorrow. You have to fight for them every day."
-                            </blockquote>   
-                            <figcaption>- Sheryl Lee, <cite>Actor, Human Rights Campaign National Dinner</cite></figcaption>                    
-                        </figure>
-                        </div>
-                </div>
-                <div class="background">
-                    <h1>Why this Quote?</h1>
-                    <article>
-                        <p>Sheryl Lee Ralph is a Jamaican actress and human rights activist. This quote reflects her commitment to fighting for justice and equality.
-                        This quote is a reminder that we must remain vigilant and proactive in protecting our rights and freedoms, as they can be threatened or taken away if we do not actively defend them.
-                        It emphasizes the importance of standing up for what is right and advocating for justice, even when it may be difficult or unpopular.
-                        This quote is particularly relevant in today's world, where issues of social justice and human rights are at the forefront of public discourse.
-                        It serves as a call to action for individuals to be aware of their rights and to actively work towards creating a more just and equitable society.
-                        </p>
-                    </article>
-                </div>
-                <div class="review">
-                    <article>
-                        <h1>"LLM's such as ChatGPT, Claude, and CoPilot must be used as a tool not a crutch."</h1>
-                        <p>I 100% agree with this statement. These powerful AI models can significantly enhance our productivity and creativity when used responsibly.
-                            Heavy reliance on AI models without critical thinking can lead to a loss of essential skills and understanding. It's crucial to use these tools to augment our capabilities, not replace them.
-                            When the use of AI models changes from "I'm using this to help me" to "I don't need to think, the AI will do it for me," we risk losing our ability to reason, analyze, and make informed decisions.
-                            I believe that the best approach is to use AI as a collaborative partner, leveraging its strengths while maintaining our own critical thinking and problem-solving skills.
-                            An exerpt from <cite>Using GenAI as a learning tool, not a crutch</cite> by <link href="https://stackoverflow.blog/2025/04/04/using-genai-as-a-learning-tool-not-a-crutch/" target="_blank">Stack Overflow Blog</link> 
-                            As a beginnerSoftware Engineer, Lee Faus highlights a problem that many of us beginners face when deploying or code to github. It's very confusing at time and one would be tempted to commit via the website or have ai assist us. 
-                            Faus instead, advises developers not to rely on AI for everything, like commit messages: "You should fully understand what you're pushing." </p>
-                    </article>
-                </div>
-                <div class="chapter">
-                    <h1>7 Cures for a Lean Purse</h1>
-                    <h3>Akrad introduces some gems that I already know, but the author provides a different perspective and practical applications
-                        <br>
-                        <span style="color: pink">Control thy Expenditure</span>
-                    </br>
-                        Budget your money and spend less than you earn. 
-                        This is a fundamental principle of financial management. Saving money and living within your means is essential for building wealth and achieving financial stability.
-                    </h3>
-                    <br>
-                    <h1>5 Laws of Gold</h1>
-                    <h3>Gold slips away from the person who invests it in businesses or purposes they do not understand.
-                        <br>
-                        <span style="color: pink">Invest in what you know</span>
-                    </br>
-                        This law emphasizes the importance of investing in areas where you have knowledge and expertise.
-                        Investing in unfamiliar businesses or ventures can lead to poor decision-making and financial loss. 
-                        Just because an investment opportunity seems popular or profitable does not mean it is a good investment.
-                    </h3>
-                </div>
-            </div>
-        </main>
-    </body>
+                <p>I believe that a well-rounded life enhances creativity and problem-solving skills in development.</p>
+            </section>
+
+            <section class="quote">
+                <figure class="quote-card">
+                    <blockquote>
+                        <p>Just because you have rights today does not mean that you will have them tomorrow. You have to fight for them every day.</p>
+                    </blockquote>
+                    <figcaption>— Sheryl Lee Ralph, <cite>Actor, Human Rights Campaign National Dinner</cite></figcaption>
+                </figure>
+            </section>
+
+            <section class="background">
+                <h2 id="quote-explanation-heading">Why This Quote?</h2>
+                <article>
+                    <p>Sheryl Lee Ralph is a Jamaican actress and human rights activist. This quote reflects her commitment to fighting for justice and equality.</p>
+                    <p>This quote is a reminder that we must remain vigilant and proactive in protecting our rights and freedoms. They can be threatened or taken away if we do not actively defend them.</p>
+                    <p>It emphasizes the importance of standing up for what is right and advocating for justice, even when it may be difficult or unpopular.</p>
+                    <p>This quote is particularly relevant in today's world, where issues of social justice and human rights are at the forefront of public discourse.</p>
+                    <p>It serves as a call to action for individuals to understand their rights and actively work towards creating a more just and equitable society.</p>
+                </article>
+            </section>
+
+            <section class="review">
+                <h2 id="ai-review-heading">“LLMs such as ChatGPT, Claude, and Copilot must be used as a tool, not a crutch.”</h2>
+                <article>
+                    <p>I 100% agree with this statement. These powerful AI models can significantly enhance our productivity and creativity when used responsibly.</p>
+                    <p>Heavy reliance on AI models without critical thinking can lead to a loss of essential skills and understanding. It's crucial to use these tools to augment our capabilities, not replace them.</p>
+                    <p>When the use of AI models changes from “I'm using this to help me” to “I don't need to think, the AI will do it for me,” we risk losing our ability to reason, analyze, and make informed decisions.</p>
+                    <p>I believe that the best approach is to use AI as a collaborative partner, leveraging its strengths while maintaining our own critical thinking and problem-solving skills.</p>
+                    <p>An excerpt from <cite>Using GenAI as a learning tool, not a crutch</cite> by <a href="https://stackoverflow.blog/2025/04/04/using-genai-as-a-learning-tool-not-a-crutch/" target="_blank" rel="noopener noreferrer">Stack Overflow Blog</a>.</p>
+                    <p>Lee Faus highlights a problem that many beginner software engineers face when deploying code or pushing it to GitHub. The process can be confusing, and developers may be tempted to commit through the website or rely on AI for assistance.</p>
+                    <p>Faus advises developers not to rely on AI for everything, including commit messages. You should fully understand what you're pushing.</p>
+                </article>
+            </section>
+
+            <section class="chapter">
+                <article>
+                    <h2>7 Cures for a Lean Purse</h2>
+                    <p>Arkad introduces some gems that I already know, but the author provides a different perspective and practical applications.</p>
+                    <h3 class="highlight">Control Thy Expenditure</h3>
+                    <p>Budget your money and spend less than you earn. This is a fundamental principle of financial management. Saving money and living within your means is essential for building wealth and achieving financial stability.</p>
+                </article>
+                <article>
+                    <h2>5 Laws of Gold</h2>
+                    <h3 class="highlight">Invest in What You Know</h3>
+                    <p>Gold slips away from the person who invests it in businesses or purposes they do not understand.</p>
+                    <p>This law emphasizes the importance of investing in areas where you have knowledge and expertise. Investing in unfamiliar businesses or ventures can lead to poor decision-making and financial loss.</p>
+                    <p>Just because an investment opportunity seems popular or profitable does not mean it is a good investment.</p>
+                </article>
+            </section>
+        </div>
+    </main>
+</body>
 </html>
